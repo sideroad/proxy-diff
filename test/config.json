@@ -1,0 +1,10 @@
+{
+  "proxies": [
+    "http://localhost:5432",
+    "http://localhost:4321"
+  ],
+  "urls": [
+    "http://sideroad.secret.jp/",
+    "http://sideroad.secret.jp/articles/"
+  ]
+}
