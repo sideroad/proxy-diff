@@ -1,0 +1,21 @@
+#!/usr/bin/env node
+
+var opts = require('opts');
+
+opts.parse([
+  {
+    'short': 'c',
+    'long': 'config',
+    'description': 'Configuration file path',
+    'value': true,
+    'required': true
+  },
+  {
+    'short': 'f',
+    'long': 'format',
+    'description': 'Specify output format. colored, plain, html can be used.',
+    'value': true
+  }
+]);
+
+require('../lib/index')(opts.get('config'), opts.get('format'));
